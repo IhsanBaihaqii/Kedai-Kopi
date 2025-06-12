@@ -124,10 +124,12 @@ nav .extra a:hover {
 }
 
 /*About*/
-.about {
+.about,
+.menu {
   padding: 8rem 7% 1.4rem;
 }
-.about h2 {
+.about h2,
+.menu h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
@@ -154,6 +156,42 @@ nav .extra a:hover {
   font-size: 1.3rem;
   font-weight: 100;
   line-height: 1.5;
+}
+
+/*Menu*/
+.menu h2 {
+  margin-top: 1rem;
+}
+.menu p {
+  text-align: center;
+  max-width: 30.5rem;
+  margin: auto;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+  gap: 25px;
+}
+.menu .row .menu-cart {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.menu .row .menu-cart img {
+  border-radius: 50%;
+  width: 200px;
+}
+.menu .row .menu-cart .title {
+  margin: 1rem auto 1.5rem;
+}
+.menu .row .menu-cart .price {
+  background-color: var(--primary);
+  max-width: 60%;
+  border-radius: 0.5rem;
 }
 
 /*Media Query*/
@@ -215,6 +253,10 @@ nav .extra a:hover {
   }
   .about .row .content p {
     font-size: 1.6rem;
+  }
+  /*Menu*/
+  .menu p {
+    font-size: 1.2rem;
   }
 }
 /*Mobile*/
