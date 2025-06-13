@@ -10,6 +10,7 @@
   border: none;
   text-decoration: none;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
@@ -125,11 +126,13 @@ nav .extra a:hover {
 
 /*About*/
 .about,
-.menu {
+.menu,
+.contact {
   padding: 8rem 7% 1.4rem;
 }
 .about h2,
-.menu h2 {
+.menu h2,
+.contact h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
@@ -162,7 +165,8 @@ nav .extra a:hover {
 .menu h2 {
   margin-top: 1rem;
 }
-.menu p {
+.menu p,
+.contact p {
   text-align: center;
   max-width: 30.5rem;
   margin: auto;
@@ -190,8 +194,55 @@ nav .extra a:hover {
 }
 .menu .row .menu-cart .price {
   background-color: var(--primary);
-  max-width: 60%;
+  max-width: 50%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.5rem;
+}
+
+/*Kontak*/
+.contact .row {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #222;
+}
+.contact .row iframe {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.contact .row form .group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 1px solid #eee;
+  padding-left: 2rem;
+}
+.contact .row form .group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: #fff;
+}
+.contact .row form button {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: white;
+  background-color: var(--primary);
+  cursor: pointer;
 }
 
 /*Media Query*/
@@ -257,6 +308,16 @@ nav .extra a:hover {
   /*Menu*/
   .menu p {
     font-size: 1.2rem;
+  }
+  /*Contact*/
+  .contact .row {
+    flex-wrap: wrap;
+  }
+  .contact .row iframe {
+    height: 30rem;
+  }
+  .contact .row form {
+    padding-top: 0;
   }
 }
 /*Mobile*/
